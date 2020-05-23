@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Librerias Serverpic: Fichero Fuente libraries/Serverpic/Servidor.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Librerias Serverpic
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Librerias Serverpic</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Buscar');
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="../../dir_29dc986c629ef16c27b74cec6dddccba.html">Serverpic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Servidor.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d06/_servidor_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef _SERVIDOR_</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define _SERVIDOR_</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#if ARDUINO &gt;= 100</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">    #include &quot;Arduino.h&quot;</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">    #include &quot;WProgram.h&quot;</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d3b/_global_8h.html">Global.h</a>&quot;</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#include &lt;ESP8266WiFi.h&gt;</span></div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#include &lt;ESP8266WebServer.h&gt;</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#include &lt;EEPROM.h&gt;</span></div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d6/d5a/_configuracion_8h.html">Configuracion.h</a>&quot;</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d9/d26/_modo_o_t_a_8h.html">ModoOTA.h</a>&quot;</span></div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#define VLibreriaServidor       &quot;2.2&quot;</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#define ServidorConectado       &quot;CONECTADO&quot;</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#define ServidorRegistrado      &quot;Registrado&quot;</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#define Ok                      &quot;OK&quot;</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#define Echo                    &quot;echo: &quot;</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#define Latido                                  &quot;Ok&quot;</span></div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">extern</span> WiFiClient Cliente;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">extern</span> String VMain;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">extern</span> String Main;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">extern</span> String VModulo;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">extern</span> String ModeloESP;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">extern</span> String VersionCore;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">extern</span> String Compilador;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">extern</span> String Board;</div><div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="../../d9/d9e/struct_telegrama.html">  110</a></span>&#160;        <span class="keyword">typedef</span> <span class="keyword">struct </span>{</div><div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="../../d9/d9e/struct_telegrama.html#a88d736bdb9d4055edc5222d2b0207349">  111</a></span>&#160;                String <a class="code" href="../../d9/d9e/struct_telegrama.html#a88d736bdb9d4055edc5222d2b0207349">Remitente</a>;                       </div><div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../d9/d9e/struct_telegrama.html#a157a3ec665086f442114edca1cf6351f">  112</a></span>&#160;                String <a class="code" href="../../d9/d9e/struct_telegrama.html#a157a3ec665086f442114edca1cf6351f">Destinatario</a>;            </div><div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="../../d9/d9e/struct_telegrama.html#ad94bf8a7558243aaf5ab150342d05463">  113</a></span>&#160;                String <a class="code" href="../../d9/d9e/struct_telegrama.html#ad94bf8a7558243aaf5ab150342d05463">Mensaje</a>;                         </div><div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="../../d9/d9e/struct_telegrama.html#abe5978df2dd0e7960465ebb6f24dc1b3">  114</a></span>&#160;                <span class="keywordtype">boolean</span> <a class="code" href="../../d9/d9e/struct_telegrama.html#abe5978df2dd0e7960465ebb6f24dc1b3">lRxMensaje</a>;                     </div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }<a class="code" href="../../d9/d9e/struct_telegrama.html">Telegrama</a>;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#a80eb1f35ec6c1559f0bcb10f2576c3a7">ClienteServerPic</a> (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<a class="code" href="../../d9/d9e/struct_telegrama.html">Telegrama</a> <a class="code" href="../../d6/d06/_servidor_8h.html#ad9f248166685209639f7f9c0d6f9ebc7">Mensaje</a> (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#a84fecef6e2c7ee7829f67090a80924f8">EnviaMensaje</a> ( <a class="code" href="../../d9/d9e/struct_telegrama.html">Telegrama</a> oMensaje );</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#a8741580b3d3d6cecba44a97e8f855105">EnviaValor</a> ( String cValor);</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;String <a class="code" href="../../d6/d06/_servidor_8h.html#ab37a8946a04f8768ce2f19f08d5d516a">LeeValor</a> (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d06/_servidor_8h.html#ad50608a014e451a40f1193bd808cd9a4">Buzon</a> (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#a2f26cccd3c399cbdfafe18b762736127">EnviaPing</a> ( <a class="code" href="../../d9/d9e/struct_telegrama.html">Telegrama</a> oMensaje );</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#afe712c4d2413542e1b18e8f6b60203da">MensajeServidor</a> ( String cTexto );</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keywordtype">boolean</span> <a class="code" href="../../d6/d06/_servidor_8h.html#aaa4c2f5196f86ff6d9527a5505a45f77">TestConxionServidor</a> (<span class="keywordtype">void</span>);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keywordtype">void</span> EnviaMensajeWebSocket (String cTexto);</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d6/d06/_servidor_8h.html#a66570218045d96b0310320036a5a9994">CheckFirmware</a> ();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_servidor_8h_html_a8741580b3d3d6cecba44a97e8f855105"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#a8741580b3d3d6cecba44a97e8f855105">EnviaValor</a></div><div class="ttdeci">boolean EnviaValor(String cValor)</div><div class="ttdoc">Envia un valor que se desea guardar como ultimovalor en el servidor. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:708</div></div>
+<div class="ttc" id="_global_8h_html"><div class="ttname"><a href="../../d5/d3b/_global_8h.html">Global.h</a></div><div class="ttdoc">Parametros y funciones globales de la aplicaciom. </div></div>
+<div class="ttc" id="_servidor_8h_html_aaa4c2f5196f86ff6d9527a5505a45f77"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#aaa4c2f5196f86ff6d9527a5505a45f77">TestConxionServidor</a></div><div class="ttdeci">boolean TestConxionServidor(void)</div><div class="ttdoc">comprueba la conexion con el servidor </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:867</div></div>
+<div class="ttc" id="_servidor_8h_html_a84fecef6e2c7ee7829f67090a80924f8"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#a84fecef6e2c7ee7829f67090a80924f8">EnviaMensaje</a></div><div class="ttdeci">boolean EnviaMensaje(Telegrama oMensaje)</div><div class="ttdoc">Envia un mensaje a un cliente de ServerPic. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:653</div></div>
+<div class="ttc" id="_servidor_8h_html_ab37a8946a04f8768ce2f19f08d5d516a"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#ab37a8946a04f8768ce2f19f08d5d516a">LeeValor</a></div><div class="ttdeci">String LeeValor(void)</div><div class="ttdoc">Recibe el contenido de ultimovalor almacenado en el servidor. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:745</div></div>
+<div class="ttc" id="_servidor_8h_html_a2f26cccd3c399cbdfafe18b762736127"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#a2f26cccd3c399cbdfafe18b762736127">EnviaPing</a></div><div class="ttdeci">boolean EnviaPing(Telegrama oMensaje)</div><div class="ttdoc">Envia un ping a un cliente de ServerPic. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:829</div></div>
+<div class="ttc" id="_servidor_8h_html_afe712c4d2413542e1b18e8f6b60203da"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#afe712c4d2413542e1b18e8f6b60203da">MensajeServidor</a></div><div class="ttdeci">boolean MensajeServidor(String cTexto)</div><div class="ttdoc">Envia un mensaje al servidor. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:790</div></div>
+<div class="ttc" id="_servidor_8h_html_ad9f248166685209639f7f9c0d6f9ebc7"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#ad9f248166685209639f7f9c0d6f9ebc7">Mensaje</a></div><div class="ttdeci">Telegrama Mensaje(void)</div><div class="ttdoc">Recoge el texto recibido del servidor lo descompone en remitente y orden. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:188</div></div>
+<div class="ttc" id="struct_telegrama_html_a157a3ec665086f442114edca1cf6351f"><div class="ttname"><a href="../../d9/d9e/struct_telegrama.html#a157a3ec665086f442114edca1cf6351f">Telegrama::Destinatario</a></div><div class="ttdeci">String Destinatario</div><div class="ttdoc">Destinatario. </div><div class="ttdef"><b>Definition:</b> Servidor.h:112</div></div>
+<div class="ttc" id="_servidor_8h_html_a80eb1f35ec6c1559f0bcb10f2576c3a7"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#a80eb1f35ec6c1559f0bcb10f2576c3a7">ClienteServerPic</a></div><div class="ttdeci">boolean ClienteServerPic(void)</div><div class="ttdoc">Conecta el modulo al servidor PIC. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:85</div></div>
+<div class="ttc" id="_servidor_8h_html_a66570218045d96b0310320036a5a9994"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#a66570218045d96b0310320036a5a9994">CheckFirmware</a></div><div class="ttdeci">void CheckFirmware()</div><div class="ttdoc">Testea la version actual del dispositivo. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:911</div></div>
+<div class="ttc" id="_configuracion_8h_html"><div class="ttname"><a href="../../d6/d5a/_configuracion_8h.html">Configuracion.h</a></div><div class="ttdoc">Funciones para configurar el modulo ESP8266 para que se conecte a una SSID y posteriormente a un serv...</div></div>
+<div class="ttc" id="struct_telegrama_html_a88d736bdb9d4055edc5222d2b0207349"><div class="ttname"><a href="../../d9/d9e/struct_telegrama.html#a88d736bdb9d4055edc5222d2b0207349">Telegrama::Remitente</a></div><div class="ttdeci">String Remitente</div><div class="ttdoc">Remitente. </div><div class="ttdef"><b>Definition:</b> Servidor.h:111</div></div>
+<div class="ttc" id="struct_telegrama_html_ad94bf8a7558243aaf5ab150342d05463"><div class="ttname"><a href="../../d9/d9e/struct_telegrama.html#ad94bf8a7558243aaf5ab150342d05463">Telegrama::Mensaje</a></div><div class="ttdeci">String Mensaje</div><div class="ttdoc">Texto orden. </div><div class="ttdef"><b>Definition:</b> Servidor.h:113</div></div>
+<div class="ttc" id="struct_telegrama_html_abe5978df2dd0e7960465ebb6f24dc1b3"><div class="ttname"><a href="../../d9/d9e/struct_telegrama.html#abe5978df2dd0e7960465ebb6f24dc1b3">Telegrama::lRxMensaje</a></div><div class="ttdeci">boolean lRxMensaje</div><div class="ttdoc">Fla para indicar que se ha recibido un mensaje. </div><div class="ttdef"><b>Definition:</b> Servidor.h:114</div></div>
+<div class="ttc" id="_servidor_8h_html_ad50608a014e451a40f1193bd808cd9a4"><div class="ttname"><a href="../../d6/d06/_servidor_8h.html#ad50608a014e451a40f1193bd808cd9a4">Buzon</a></div><div class="ttdeci">void Buzon(void)</div><div class="ttdoc">Manda el comando buzon al servidor. </div><div class="ttdef"><b>Definition:</b> Servidor.cpp:771</div></div>
+<div class="ttc" id="struct_telegrama_html"><div class="ttname"><a href="../../d9/d9e/struct_telegrama.html">Telegrama</a></div><div class="ttdoc">Estructura de deatos de un mensaje recibido o transmitido. </div><div class="ttdef"><b>Definition:</b> Servidor.h:110</div></div>
+<div class="ttc" id="_modo_o_t_a_8h_html"><div class="ttname"><a href="../../d9/d26/_modo_o_t_a_8h.html">ModoOTA.h</a></div><div class="ttdoc">Funciones que ponen el modulo en modo OTA para poderle cargar software inalambricamente. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Mayo de 2020 19:59:30 para Librerias Serverpic por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

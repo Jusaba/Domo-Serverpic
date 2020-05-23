@@ -1,0 +1,13 @@
+<map id="TestConexion" name="TestConexion">
+<area shape="rect" id="node2" href="$d0/d04/_servidor_8cpp.html#aaa4c2f5196f86ff6d9527a5505a45f77" title="comprueba la conexion con el servidor " alt="" coords="155,5,295,32"/>
+<area shape="rect" id="node3" href="$d2/dc6/_modo_s_t_a_8cpp.html#aa51ddfed13156024e02c0b4f501e36a6" title="comprueba la conexion con la SSID " alt="" coords="161,56,288,83"/>
+<area shape="rect" id="node4" href="$d2/dc6/_modo_s_t_a_8cpp.html#a7c18e7e750b90c9393ad3c3397ba0eee" title="Pone el modulo en modo STA y lo conecta a la SSID alamacenad en la configuracion. ..." alt="" coords="181,107,268,133"/>
+<area shape="rect" id="node10" href="$d0/d04/_servidor_8cpp.html#a80eb1f35ec6c1559f0bcb10f2576c3a7" title="Conecta el modulo al servidor PIC. " alt="" coords="166,157,283,184"/>
+<area shape="rect" id="node11" href="$d4/d6b/_global_8cpp.html#afe1ba2d814dd4e7b670931099c39d451" title="Graba una variable en el servidor. " alt="" coords="173,208,277,235"/>
+<area shape="rect" id="node12" href="$d4/d6b/_global_8cpp.html#adf92f59288ab1444c8f198b8f5b87c9c" title="Lee una variable int almacenada en servidor, si la variable no existe devuelva 0. ..." alt="" coords="179,259,270,285"/>
+<area shape="rect" id="node5" href="$df/d44/_eprom_8cpp.html#a291afcfc966ae4b37c87891721dd9226" title="Lee un byte de la Erpom. " alt="" coords="551,107,659,133"/>
+<area shape="rect" id="node6" href="$d5/db8/_configuracion_8cpp.html#a6f7ea2378ee2c0aff071532952d26e3d" title="Lee los datos de configuracion desde la EEprom y los almacena eb uns estructura DataConfig. " alt="" coords="343,157,495,184"/>
+<area shape="rect" id="node8" href="$d4/d6b/_global_8cpp.html#ada06ba75824b460e5020feb928a3dd56" title="Testea el boton de reset. " alt="" coords="368,56,469,83"/>
+<area shape="rect" id="node7" href="$df/d44/_eprom_8cpp.html#abd078a8c9f654672c222df90c329141b" title="Lee una cadna de datos desde la Erpom. " alt="" coords="548,157,663,184"/>
+<area shape="rect" id="node9" href="$df/d44/_eprom_8cpp.html#a00a59830c681f0e2d511e3ad7aafaa45" title="Borra un bloque de datos de la Eprom. " alt="" coords="543,56,668,83"/>
+</map>

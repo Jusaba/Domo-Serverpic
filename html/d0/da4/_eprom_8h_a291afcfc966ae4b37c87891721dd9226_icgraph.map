@@ -1,0 +1,6 @@
+<map id="LeeByteEprom" name="LeeByteEprom">
+<area shape="rect" id="node2" href="$d6/d5a/_configuracion_8h.html#a6f7ea2378ee2c0aff071532952d26e3d" title="Lee los datos de configuracion desde la EEprom y los almacena eb uns estructura DataConfig. " alt="" coords="161,56,313,83"/>
+<area shape="rect" id="node3" href="$dc/d68/_modo_s_t_a_8h.html#a7c18e7e750b90c9393ad3c3397ba0eee" title="Pone el modulo en modo STA y lo conecta a la SSID alamacenad en la configuracion. ..." alt="" coords="377,5,463,32"/>
+<area shape="rect" id="node5" href="$d6/d06/_servidor_8h.html#a80eb1f35ec6c1559f0bcb10f2576c3a7" title="Conecta el modulo al servidor PIC. " alt="" coords="361,56,479,83"/>
+<area shape="rect" id="node4" href="$d5/d3b/_global_8h.html#a1cbf0a6b6d6d98cd2a0203755eedf582" title="Testea la conexion completa hasta el servidor. " alt="" coords="527,31,628,57"/>
+</map>

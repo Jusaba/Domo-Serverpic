@@ -1,0 +1,5 @@
+<map id="ClienteServerPic" name="ClienteServerPic">
+<area shape="rect" id="node2" href="$d5/db8/_configuracion_8cpp.html#a6f7ea2378ee2c0aff071532952d26e3d" title="Lee los datos de configuracion desde la EEprom y los almacena eb uns estructura DataConfig. " alt="" coords="171,31,323,57"/>
+<area shape="rect" id="node3" href="$df/d44/_eprom_8cpp.html#abd078a8c9f654672c222df90c329141b" title="Lee una cadna de datos desde la Erpom. " alt="" coords="371,5,485,32"/>
+<area shape="rect" id="node4" href="$df/d44/_eprom_8cpp.html#a291afcfc966ae4b37c87891721dd9226" title="Lee un byte de la Erpom. " alt="" coords="374,56,482,83"/>
+</map>

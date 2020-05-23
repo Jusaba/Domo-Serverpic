@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Librerias Serverpic: Fichero Fuente libraries/Serverpic/Eprom.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Librerias Serverpic
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Librerias Serverpic</div>
+  </td>
+   <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Buscar');
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="../../dir_bc0718b08fb2015b8e59c47b2805f60c.html">libraries</a></li><li class="navelem"><a class="el" href="../../dir_29dc986c629ef16c27b74cec6dddccba.html">Serverpic</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Eprom.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d0/da4/_eprom_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef EPROM_H</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define EPROM_H</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;inttypes.h&gt;</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#if defined(__AVR__)</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">        #include &lt;util/crc16.h&gt;</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#if ARDUINO &gt;= 100</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">    #include &quot;Arduino.h&quot;</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">    #include &quot;WProgram.h&quot;</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d3b/_global_8h.html">Global.h</a>&quot;</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;EEPROM.h&gt;</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#define VLibreriaEprom  &quot;1.2&quot;</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d0/da4/_eprom_8h.html#a5511c3fb385852d7b4e05d3aa9dbe329">GrabaByteEprom</a> ( <span class="keywordtype">int</span> nPosicion, byte bDato );</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d0/da4/_eprom_8h.html#a9bd59bfc7c00b32f117a0206e9b5bdc0">GrabaStringEprom</a> ( <span class="keywordtype">int</span> nPosicion, String cDato );</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d0/da4/_eprom_8h.html#a30e647de0d1fd1f19933b397c18af44f">GrabaIntEprom</a> (<span class="keywordtype">int</span> nPOsicion, <span class="keywordtype">int</span> nDato);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        </div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="../../d0/da4/_eprom_8h.html#a00a59830c681f0e2d511e3ad7aafaa45">BorraDatosEprom</a> ( <span class="keywordtype">int</span> nPosicion,  <span class="keywordtype">int</span> nLenDato );</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        byte <a class="code" href="../../d0/da4/_eprom_8h.html#a291afcfc966ae4b37c87891721dd9226">LeeByteEprom</a> (  <span class="keywordtype">int</span> nPosicion  );</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        String <a class="code" href="../../d0/da4/_eprom_8h.html#abd078a8c9f654672c222df90c329141b">LeeStringEprom</a> (  <span class="keywordtype">int</span> nPosicion );</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="../../d0/da4/_eprom_8h.html#ae5623b14c3ce1b0bd1263c3183fd5b72">LeeIntEprom</a> ( <span class="keywordtype">int</span> nPosicion );</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_eprom_8h_html_a9bd59bfc7c00b32f117a0206e9b5bdc0"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#a9bd59bfc7c00b32f117a0206e9b5bdc0">GrabaStringEprom</a></div><div class="ttdeci">int GrabaStringEprom(int nPosicion, String cDato)</div><div class="ttdoc">Graba un string en Eprom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:51</div></div>
+<div class="ttc" id="_global_8h_html"><div class="ttname"><a href="../../d5/d3b/_global_8h.html">Global.h</a></div><div class="ttdoc">Parametros y funciones globales de la aplicaciom. </div></div>
+<div class="ttc" id="_eprom_8h_html_abd078a8c9f654672c222df90c329141b"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#abd078a8c9f654672c222df90c329141b">LeeStringEprom</a></div><div class="ttdeci">String LeeStringEprom(int nPosicion)</div><div class="ttdoc">Lee una cadna de datos desde la Erpom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:141</div></div>
+<div class="ttc" id="_eprom_8h_html_ae5623b14c3ce1b0bd1263c3183fd5b72"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#ae5623b14c3ce1b0bd1263c3183fd5b72">LeeIntEprom</a></div><div class="ttdeci">int LeeIntEprom(int nPosicion)</div><div class="ttdoc">Lee un byte de la Erpom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:177</div></div>
+<div class="ttc" id="_eprom_8h_html_a291afcfc966ae4b37c87891721dd9226"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#a291afcfc966ae4b37c87891721dd9226">LeeByteEprom</a></div><div class="ttdeci">byte LeeByteEprom(int nPosicion)</div><div class="ttdoc">Lee un byte de la Erpom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:124</div></div>
+<div class="ttc" id="_eprom_8h_html_a30e647de0d1fd1f19933b397c18af44f"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#a30e647de0d1fd1f19933b397c18af44f">GrabaIntEprom</a></div><div class="ttdeci">int GrabaIntEprom(int nPOsicion, int nDato)</div><div class="ttdoc">Graba un int en Eprom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:87</div></div>
+<div class="ttc" id="_eprom_8h_html_a00a59830c681f0e2d511e3ad7aafaa45"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#a00a59830c681f0e2d511e3ad7aafaa45">BorraDatosEprom</a></div><div class="ttdeci">void BorraDatosEprom(int nPosicion, int nLenDato)</div><div class="ttdoc">Borra un bloque de datos de la Eprom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:101</div></div>
+<div class="ttc" id="_eprom_8h_html_a5511c3fb385852d7b4e05d3aa9dbe329"><div class="ttname"><a href="../../d0/da4/_eprom_8h.html#a5511c3fb385852d7b4e05d3aa9dbe329">GrabaByteEprom</a></div><div class="ttdeci">int GrabaByteEprom(int nPosicion, byte bDato)</div><div class="ttdoc">Graba un byte en Eprom. </div><div class="ttdef"><b>Definition:</b> Eprom.cpp:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 23 de Mayo de 2020 19:59:30 para Librerias Serverpic por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
