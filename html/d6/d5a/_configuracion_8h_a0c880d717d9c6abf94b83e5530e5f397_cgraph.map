@@ -1,4 +1,0 @@
-<map id="ConfiguracionToEprom" name="ConfiguracionToEprom">
-<area shape="rect" id="node2" href="$df/d44/_eprom_8cpp.html#a9bd59bfc7c00b32f117a0206e9b5bdc0" title="Graba un string en Eprom. " alt="" coords="205,5,335,32"/>
-<area shape="rect" id="node3" href="$df/d44/_eprom_8cpp.html#a5511c3fb385852d7b4e05d3aa9dbe329" title="Graba un byte en Eprom. " alt="" coords="209,56,331,83"/>
-</map>

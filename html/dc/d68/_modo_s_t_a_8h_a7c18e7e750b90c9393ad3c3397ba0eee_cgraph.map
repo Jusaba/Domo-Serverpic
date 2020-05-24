@@ -1,7 +1,0 @@
-<map id="ClienteSTA" name="ClienteSTA">
-<area shape="rect" id="node2" href="$df/d44/_eprom_8cpp.html#a291afcfc966ae4b37c87891721dd9226" title="Lee un byte de la Erpom. " alt="" coords="349,5,457,32"/>
-<area shape="rect" id="node3" href="$d5/db8/_configuracion_8cpp.html#a6f7ea2378ee2c0aff071532952d26e3d" title="Lee los datos de configuracion desde la EEprom y los almacena eb uns estructura DataConfig. " alt="" coords="140,56,292,83"/>
-<area shape="rect" id="node5" href="$d4/d6b/_global_8cpp.html#ada06ba75824b460e5020feb928a3dd56" title="Testea el boton de reset. " alt="" coords="165,107,267,133"/>
-<area shape="rect" id="node4" href="$df/d44/_eprom_8cpp.html#abd078a8c9f654672c222df90c329141b" title="Lee una cadna de datos desde la Erpom. " alt="" coords="345,56,460,83"/>
-<area shape="rect" id="node6" href="$df/d44/_eprom_8cpp.html#a00a59830c681f0e2d511e3ad7aafaa45" title="Borra un bloque de datos de la Eprom. " alt="" coords="340,107,465,133"/>
-</map>

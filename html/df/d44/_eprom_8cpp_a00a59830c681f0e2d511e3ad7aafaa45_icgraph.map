@@ -1,5 +1,0 @@
-<map id="BorraDatosEprom" name="BorraDatosEprom">
-<area shape="rect" id="node2" href="$d5/d3b/_global_8h.html#ada06ba75824b460e5020feb928a3dd56" title="Testea el boton de reset. " alt="" coords="179,5,280,32"/>
-<area shape="rect" id="node3" href="$dc/d68/_modo_s_t_a_8h.html#a7c18e7e750b90c9393ad3c3397ba0eee" title="Pone el modulo en modo STA y lo conecta a la SSID alamacenad en la configuracion. ..." alt="" coords="328,5,415,32"/>
-<area shape="rect" id="node4" href="$d5/d3b/_global_8h.html#a1cbf0a6b6d6d98cd2a0203755eedf582" title="Testea la conexion completa hasta el servidor. " alt="" coords="463,5,564,32"/>
-</map>
